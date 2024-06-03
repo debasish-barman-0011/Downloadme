@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Download YouTube Videos for Free</title>
+    <link rel="shortcut icon" href="./images/youtube.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>YouTube Video Downloader</h1>
+    </nav>
+    <main>
+      <div class="search-container">
+        <input type="text" id="video-url" placeholder="Paste Video URL" />
+        <button onclick="searchVideo()">Search</button>
+      </div>
+      <div id="video-results" class="video-results">
+        <!-- Videos will be added here dynamically -->
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 YouTube Video Downloader by
+        <a href="https://dbport.netlify.app/" target="_blank"
+          >Debasish Barman</a
+        >
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

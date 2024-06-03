@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+img{
+    width: 150px;
+}
+
+footer {
+  background-color: #333;
+  color: #f4f4f4af;
+  text-align: right;
+  padding: 1em;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.search-container input {
+  padding: 0.5em;
+  font-size: 1em;
+  margin-right: 1em;
+  flex: 1;
+}
+
+.search-container button {
+  padding: 0.5em;
+  font-size: 1em;
+  background: #333;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.search-container button:hover{
+    background: #585455;
+    
+
+}
+.video-results {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  background-color: #f9f9f9;
+}
+
+.thumbnail {
+  flex: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  flex: 50%;
+  padding: 0 1em;
+}
+
+.actions {
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions button {
+  margin-bottom: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thumbnail,
+  .details,
+  .actions {
+    flex: 100%;
+  }
+
+  .details {
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+}
+
+footer p a{
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.downloadBtn {
+    animation: blink 1s infinite;
+    background: #ff004d;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
