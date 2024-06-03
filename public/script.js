@@ -56,19 +56,13 @@ function searchVideo() {
   });
 }
 
-// function downloadVideo(video) {
-//     alert(`Downloading: ${video.title}\nQuality: ${video.quality}\nSize: ${video.size}`);
-
-//     console.log(`Downloading video from URL: ${video.url}`);
-// }
-
 function downloadVideo(video) {
   alert(
     `Downloading: ${video.title}\nQuality: ${video.quality}\nSize: ${video.size}`
   );
 
   const videoUrl = video.url;
-  const downloadUrl = `http://localhost:3000/download?url=${encodeURIComponent(
+  const downloadUrl = `/download?url=${encodeURIComponent(
     videoUrl
   )}`;
 
