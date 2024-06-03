@@ -1,7 +1,9 @@
 const express = require("express");
 const ytdl = require("ytdl-core");
 const cors = require("cors");
-const app = express();
+const path = require("path");
+const app = express()
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Middleware to enable CORS
 app.use(cors());
@@ -38,11 +40,6 @@ app.get("/download", async (req, res) => {
 });
 
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
